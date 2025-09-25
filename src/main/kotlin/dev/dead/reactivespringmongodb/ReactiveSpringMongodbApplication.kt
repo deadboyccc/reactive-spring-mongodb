@@ -53,7 +53,7 @@ class ReactiveSpringMongodbApplication {
                 )
         }
         // 3. POST (Create)
-        POST("") { request ->
+        POST("/customers") { request ->
             // Deserialize the request body into a Customer object
             val customer = request.awaitBody<Customer>()
 
